@@ -29,13 +29,8 @@ int  countNumber;//問題の順番　最初は０番目
 float  seikaisu;
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    countNumber = 0;
-
-    seikaisu = 0.0;
     
     self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
     
@@ -113,7 +108,7 @@ float  seikaisu;
     // 正解だった時の処理
     self.kaitoulabel.text = @"正解です";
     self.seikairitulabel.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
-                                 ;
+                                ;
 }
                                  
 - (void)fuseikai {
