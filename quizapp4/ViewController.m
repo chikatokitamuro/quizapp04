@@ -34,8 +34,11 @@ float  seikaisu;
     [super viewDidLoad];
     
     countNumber = 0;
+
     seikaisu = 0.0;
+    
     self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
+    
 }
 
 
@@ -44,6 +47,8 @@ float  seikaisu;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 - (IBAction)maru:(id)sender {//maruボタンが押された時の処置
     switch  (countNumber) {
         case 0:
@@ -67,7 +72,9 @@ float  seikaisu;
             break;
         default:
             break;
+    
     }
+    
     // 正解でも不正解でも、次の問いに進む
     countNumber++;
     [self showQuestion];//
