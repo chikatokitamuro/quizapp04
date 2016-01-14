@@ -35,7 +35,6 @@ float  seikaisu;
     
     countNumber = 0;
     seikaisu = 0.0;
-    
     self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
 }
 
@@ -68,7 +67,7 @@ float  seikaisu;
             break;
         default:
             break;
-    
+    }
     // 正解でも不正解でも、次の問いに進む
     countNumber++;
     [self showQuestion];//
