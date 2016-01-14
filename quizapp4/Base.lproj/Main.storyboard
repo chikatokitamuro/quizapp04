@@ -17,13 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MMw-L5-X8E">
-                                <rect key="frame" x="180" y="42" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glO-8e-E0i">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glO-8e-E0i">
                                 <rect key="frame" x="336" y="213" width="76" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="✖︎">
@@ -33,14 +27,14 @@
                                     <action selector="peke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kd7-dd-S9c"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="解答" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpM-io-k6j">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="解答" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpM-io-k6j">
                                 <rect key="frame" x="180" y="316" width="240" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.98352667297979801" green="0.23318882766318172" blue="0.37273361107156139" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rw-Nl-eRX">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rw-Nl-eRX">
                                 <rect key="frame" x="180" y="213" width="76" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="○">
@@ -50,14 +44,33 @@
                                     <action selector="maru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9vA-kj-uyh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXN-PN-7rW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXN-PN-7rW">
                                 <rect key="frame" x="10" y="417" width="590" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MMw-L5-X8E">
+                                <rect key="frame" x="180" y="42" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.79741551771078867" green="1" blue="0.61417232010289236" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MMw-L5-X8E" secondAttribute="trailing" constant="180" id="6rO-0e-zDJ"/>
+                            <constraint firstItem="rpM-io-k6j" firstAttribute="top" secondItem="4Rw-Nl-eRX" secondAttribute="bottom" constant="39" id="GsZ-is-ERB"/>
+                            <constraint firstItem="rpM-io-k6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="JX2-VF-x36"/>
+                            <constraint firstAttribute="trailing" secondItem="glO-8e-E0i" secondAttribute="trailing" constant="188" id="NA5-e5-O3i"/>
+                            <constraint firstItem="4Rw-Nl-eRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="REc-gD-g9r"/>
+                            <constraint firstItem="MMw-L5-X8E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="VCd-Tk-Opt"/>
+                            <constraint firstItem="QXN-PN-7rW" firstAttribute="top" secondItem="rpM-io-k6j" secondAttribute="bottom" constant="33" id="Ytd-cw-NdI"/>
+                            <constraint firstAttribute="trailing" secondItem="rpM-io-k6j" secondAttribute="trailing" constant="180" id="kpn-yI-NoS"/>
+                            <constraint firstItem="MMw-L5-X8E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="mA5-Yb-Q3b"/>
+                            <constraint firstItem="4Rw-Nl-eRX" firstAttribute="top" secondItem="MMw-L5-X8E" secondAttribute="bottom" constant="43" id="nTd-qN-Fnx"/>
+                            <constraint firstItem="glO-8e-E0i" firstAttribute="top" secondItem="MMw-L5-X8E" secondAttribute="bottom" constant="43" id="xGt-9N-ryq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="kaitoulabel" destination="rpM-io-k6j" id="yEk-kZ-yxe"/>

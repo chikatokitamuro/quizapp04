@@ -26,17 +26,18 @@
 
 int  countNumber;
 
-int  seikaisu;
+float  seikaisu;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    countNumber = 0;
+    seikaisu = 0.0;
+    
     self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
 }
-countNumber = 0;//問題数のカウント
-seikaisu = 0;//正解数のカウント
-//なぜエラーが出るのでしょうか
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -69,7 +70,7 @@ seikaisu = 0;//正解数のカウント
     }
     
     // 正解でも不正解でも、次の問いに進む
-    countNumber1++;//なぜエラーが出るのでしょうか
+    countNumber++;//なぜエラーが出るのでしょうか
     [self showQuestion];
 
 }
@@ -105,9 +106,11 @@ seikaisu = 0;//正解数のカウント
 - (void)seikai {
     // 正解だった時の処理
     self.kaitoulabel.text = @"正解です";
-    self.seikairitulabel.text = @"正解率は%d％です",seikaisu/5*100;
-    //なぜエラーが出るのでしょうか
-}
+    self.seikairitulabel.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]; /*[NSString stringWithFormat:@"正解率は%d％です",seikaisu/5*100];
+             に変更したところエラーが一斉に出ました　なぜでしょうか
+                                                                                           
+                                                                                           
+                                                                                           */
 
 - (void)fuseikai {
     // 不正解だった時の処理
