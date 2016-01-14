@@ -68,11 +68,10 @@ float  seikaisu;
             break;
         default:
             break;
-    }
     
     // 正解でも不正解でも、次の問いに進む
-    countNumber++;//なぜエラーが出るのでしょうか
-    [self showQuestion];
+    countNumber++;
+    [self showQuestion];//
 
 }
 
@@ -107,12 +106,10 @@ float  seikaisu;
 - (void)seikai {
     // 正解だった時の処理
     self.kaitoulabel.text = @"正解です";
-    self.seikairitulabel.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]; /*[NSString stringWithFormat:@"正解率は%d％です",seikaisu/5*100];
-             に変更したところエラーが一斉に出ました　なぜでしょうか
-                                                                                           
-                                                                                           
-                                                                                           */
-
+    self.seikairitulabel.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
+                                 ;
+}
+                                 
 - (void)fuseikai {
     // 不正解だった時の処理
     self.kaitoulabel.text = @"不正解です";

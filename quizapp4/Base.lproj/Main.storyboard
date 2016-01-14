@@ -78,7 +78,6 @@
                         <outlet property="mondai1" destination="MMw-L5-X8E" id="zkQ-43-2Id"/>
                         <outlet property="pekebutton" destination="glO-8e-E0i" id="rSg-Ks-pQE"/>
                         <outlet property="seikairitulabel" destination="QXN-PN-7rW" id="cWr-qs-XUq"/>
-                        <outlet property="問題１" destination="MMw-L5-X8E" id="bfv-2R-wED"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
