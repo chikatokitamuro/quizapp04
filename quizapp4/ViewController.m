@@ -24,9 +24,10 @@
 
 @implementation ViewController
 
-int  countNumber;
+int  countNumber;//問題の順番　最初は０番目
 
 float  seikaisu;
+
 
 
 - (void)viewDidLoad {
@@ -44,19 +45,19 @@ float  seikaisu;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)maru:(id)sender {
+- (IBAction)maru:(id)sender {//maruボタンが押された時の処置
     switch  (countNumber) {
         case 0:
             // 最初の問題は丸が正解なので、正解扱いにする
-            [self seikai];
-            seikaisu++;
+            [self seikai];//seikai時の処置を呼び出す
+            seikaisu++;//seikaisuを一つカウントする
             break;
         case 1:
             [self seikai];
             seikaisu++;
             break;
         case 2:
-            [self fuseikai];
+            [self fuseikai];//fuseikai時の処置を呼び出す
             break;
         case 3:
             [self seikai];
